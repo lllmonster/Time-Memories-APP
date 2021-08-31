@@ -25,7 +25,7 @@ def draw_daily_pie(input_date):
 def draw_monthly_pie(month):
     print("TODO-Monthly-Pie")
 
-def dray_getup_chart(getup):
+def draw_getup_chart(getup):
     print("TODO-Getup-TimeLine")
 
 def read_my_excel(day, month, getup):
@@ -34,7 +34,7 @@ def read_my_excel(day, month, getup):
     if (month != ''):
         draw_monthly_pie(month)
     if (getup != ''):
-        dray_getup_chart(getup)
+        draw_getup_chart(getup)
 
 def main(argv):
     day = ''
