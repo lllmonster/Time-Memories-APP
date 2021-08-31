@@ -14,7 +14,8 @@ label_color = {"BK":"blue",
                 "LN":"gold",
                 "GYM":"pink",
                 "RD":"purple",
-                "ON":"brown"}
+                "ON":"brown",
+                "BH":"mediumblue"}
 
 def draw(daliyData, daily_date, daily_week):
     
@@ -33,7 +34,7 @@ def draw(daliyData, daily_date, daily_week):
 
     for x, y in dailyDict.items():
         if not x in label_color:
-            raise ValueError("{} doesnot exists in label set".format(x))
+            raise ValueError(f"{x} doesnot exists in label set")
         else:
             labels.append(x)
             sizes.append(y)
